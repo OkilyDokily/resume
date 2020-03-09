@@ -6,7 +6,7 @@
 
 ## Description
 
-_A favorites band which demonstrates html and css basics including divs with classes._
+_A resume page which demonstrates html and css basics including divs with classes._
 
 ## Setup/Installation Requirements
 

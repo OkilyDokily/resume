@@ -1,0 +1,172 @@
+.parent {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, fit-content);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 8.5in;
+    width: 11in;
+    padding: 40px;
+
+    grid-template-areas:
+        "name name name"
+        "careercontact careercontact contact"
+        "education skills certification"
+        "references references references";
+}
+
+
+html {
+    text-align: center;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 2px;
+    margin-top: 2px;
+    font-size: 30px;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    font-size: 24px;
+}
+
+
+#education {
+    grid-area: education;
+}
+
+#name {
+
+    grid-area: name;
+    padding-bottom: 80px;
+}
+
+
+div#name #capital {
+    position: relative;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+#name div#capital p {
+    font-size: 80px;
+    font-weight: 200;
+    font-family: sans-serif;
+    padding: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#careercontact {
+
+    flex-direction: row;
+    display: flex;
+    padding-bottom: 40px;
+}
+
+
+div#career {
+    grid-area: careercontact;
+    text-align: left;
+    padding-right: 30px;
+    padding-bottom: 35px;
+
+}
+
+div#contact {
+    grid-area: contact;
+    text-align: left;
+
+}
+
+div#contact ul li {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+#references {
+    grid-area: references;
+    padding-top: 35px;
+}
+
+.turquoise {
+    background-color: turquoise;
+    color: white;
+    margin: 4px;
+}
+
+.grey {
+    background-color: grey;
+    color: white;
+    margin: 4px;
+}
+
+ul {
+    list-style: none;
+}
+
+div#career h1 {
+    border-bottom: 1px solid turquoise;
+    margin: auto;
+    width: fit-content;
+}
+
+div#contact h1 {
+    border-bottom: 1px solid turquoise;
+    margin: auto;
+    width: fit-content;
+    text-align: left;
+}
+
+
+
+
+
+#skills {
+    border-right: black 1px solid;
+    border-left: black 1px solid;
+
+}
+
+div#webdeveloper {
+    background-color: turquoise;
+    color: white;
+    width: fit-content;
+    position: absolute;
+
+    padding: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#certification {
+    grid-area: certification;
+}
+
+.certificationdetail,
+.detail {
+    font-size: 25px;
+    ;
+}
+
+#referencename {
+    font-weight: bold;
+}
+
+svg {
+    padding-right: 6px;
+}

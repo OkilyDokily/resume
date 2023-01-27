@@ -11,7 +11,7 @@
 
     grid-template-areas:
         "name name name"
-        "careercontact careercontact contact"
+        "careercontact careerexperience contact"
         "education skills certification"
         "references references references";
 }
@@ -73,6 +73,7 @@ div#name #capital {
     flex-direction: row;
     display: flex;
     padding-bottom: 40px;
+  
 }
 
 
@@ -81,7 +82,11 @@ div#career {
     text-align: left;
     padding-right: 30px;
     padding-bottom: 35px;
+   
+}
 
+div#career p{
+    font-size: 20px;
 }
 
 div#contact {
@@ -115,7 +120,12 @@ div#contact ul li {
 
 ul {
     list-style: none;
+
 }
+
+#experience ul{
+ 
+} 
 
 div#career h1 {
     border-bottom: 1px solid turquoise;
@@ -130,7 +140,11 @@ div#contact h1 {
     text-align: left;
 }
 
-
+div#experience h1{
+    border-bottom: 1px solid turquoise;
+    margin: auto;
+    width: fit-content;
+}
 
 
 
@@ -169,4 +183,8 @@ div#webdeveloper {
 
 svg {
     padding-right: 6px;
+}
+
+a{
+    color:black;
 }
